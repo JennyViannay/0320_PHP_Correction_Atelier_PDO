@@ -16,7 +16,7 @@
 
 ## CRUD pour article :
 
-index.php => get all articles // SELECT * FROM article; GET
-create.php => post on article // INSERT INTO article (title, content, author) VALUES (:title, :content, :author); // FORMULAIRE POST
-edit.php => update on article // UPDATE artcile SET title=:title, content=:content, author=:author; // FORMULAIRE POST
+index.php => get all articles // SELECT * FROM article; GET <br>
+create.php => post on article // INSERT INTO article (title, content, author) VALUES (:title, :content, :author); // FORMULAIRE POST <br>
+edit.php => update on article // UPDATE artcile SET title=:title, content=:content, author=:author; // FORMULAIRE POST <br>
 delete.php => delete on article // DELETE FROM article WHERE id=:id; GET
