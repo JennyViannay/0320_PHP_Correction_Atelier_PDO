@@ -11,8 +11,7 @@
 > id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
 > title VARCHAR(80),
 > content TEXT,
-> author VARCHAR(80)
->);
+> author VARCHAR(80));
 >
 
 ## CRUD pour article :
