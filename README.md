@@ -12,7 +12,7 @@
 > title VARCHAR(80),
 > content TEXT,
 > author VARCHAR(80)
-> );
+>);
 >
 
 ## CRUD pour article :
