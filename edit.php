@@ -17,13 +17,15 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
 }
 
 if(isset($_POST) && !empty($_POST)){
+    $id = $_GET['id'];
     if(!empty($_POST['title']) && !empty($_POST['content']) && !empty($_POST['author'])){
         try{
-            $editArticle = $pdo->prepare("UPDATE article SET title=:title, content=:content, author=:author");
+            $editArticle = $pdo->prepare("UPDATE article SET title=:title, content=:content, author=:author WHERE id=:id");
             $editArticle->execute([
                 'title' => $_POST['title'],
                 'content' => $_POST['content'],
-                'author' => $_POST['author']
+                'author' => $_POST['author'],
+                'id' => $id
             ]);
             header('Location: http://localhost:8000');
         } catch (PDOException $e){
